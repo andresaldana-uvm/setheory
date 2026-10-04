@@ -1,18 +1,23 @@
 [build-system]
 requires = [
     "setuptools>=75",
-    "setuptools-scm>=8"
+    "setuptools-scm>=8",
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "setheory"
 dynamic = ["version"]
-description = ""
+description = "A predicate-based library for set theory."
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "André Saldaña" }]
 dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+]
 
 [tool.setuptools.packages.find]
 include = ["setheory*"]
