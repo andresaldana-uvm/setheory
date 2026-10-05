@@ -27,18 +27,20 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-Después, instala el paquete en modo editable:
+A continuación, instala el paquete en modo editable junto con sus dependencias de desarrollo:
 
 ```bash
-python -m pip install -e .
+python -m pip install -e ".[dev]"
 ```
 
-La instalación editable permite que los cambios realizados en el código fuente local estén disponibles sin tener que reinstalar el paquete.
+La instalación editable permite que los cambios realizados en el código fuente local estén disponibles sin reinstalar el paquete.
+
+Las dependencias de desarrollo incluyen las herramientas necesarias para ejecutar la suite de tests y otras tareas de mantenimiento del proyecto.
 
 ## Verificar la instalación
 
-Después de instalar el paquete, verifica que pueda importarse correctamente:
+Después de instalar el paquete, puedes comprobar que setheory se puede importar correctamente:
 
 ```bash
-python -c "from setheory.api import Set; print(Set)"
+python -c "import setheory; print(setheory.__file__)"
 ```
