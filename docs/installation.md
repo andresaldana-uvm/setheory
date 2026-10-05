@@ -7,7 +7,7 @@ setheory requiere Python 3.11 o posterior.
 setheory no se distribuye actualmente a través de PyPI. Para instalar la versión más reciente directamente desde GitHub:
 
 ```bash
-python -m pip install git+https://github.com/<usuario>/setheory.git
+python -m pip install git+https://github.com/andresaldana-uvm/setheory.git
 ```
 
 ## Instalación desde una copia local
